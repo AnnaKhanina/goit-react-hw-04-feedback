@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Main from 'App.styled.jsx';
 import { Section } from 'components/Section/Section';
 import { FeedbackOptions } from 'components/Feedback/Feedback';
 import { Statistics } from 'components/Statistics/Statistics';
@@ -40,7 +41,7 @@ export function App() {
   const feedbacks = ['good', 'neutral', 'bad'];
 
   return (
-    <>
+    <Main>
       <Section title="Please leave feedback">
         <FeedbackOptions
           options={feedbacks}
@@ -60,6 +61,6 @@ export function App() {
           <Notification message="There is no feedback" />
         )}
       </Section>
-    </>
+    </Main>
   );
 }
